@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- Fire UI CSS -->
+            <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fire-ui/fire-ui@0.2.4/FireUI.min.css">
+            <link rel="stylesheet" type="text/css" href="index.css">
+            <!-- Fire UI Javascript -->
+            <script src="https://cdn.jsdelivr.net/npm/@fire-ui/fire-ui@0.2.4/FireUI.min.js"></script>
+            <title>Hello, world!</title>
+        </head>
+        <body>
+            <div class="topnav theme-reverse topnav-shadow">
+                <span class="topnav-brand">Navbar</span>
+                <span class="topnav-hamburger-menu" data-target = "myTopnav">&#x2630;</span>
+                <div class="topnav-right" id="myTopnav">
+                    <a class="topnav-item" data-switch-theme="light, dark, aqua, sky, phoenix, indigo, teal">Switch theme</a>
+                </div>
+            </div>
+            <div id="form">
+                <div className="centeredForm">
+                    <div class="box theme-reverse">
+                        <div class="box">
+                            <div class="tab" data-tab="formTab">
+                                <button class="tab-btn btn-dark" data-content="login">Login</button>
+                                <button class="tab-btn btn-light" data-content="register">Register</button>
+                            </div>
+                            <div class="tab-contents" id="formTab">
+                                <div id="login" class="tab-content tab-content-active">
+                                    <form action="#" method="POST">
+                                        <div class="form-group form-animate">
+                                            <p class="form-label">Username</p>
+                                            <input type="text" class="input-animate" required autocomplete="username">
+                                            <span class="input-onFocus"></span>
+                                        </div>
+                                        <div class="form-group form-animate">
+                                            <p class="form-label">Password</p>
+                                            <input type="email" class="input-animate" required autocomplete="current-password">
+                                            <span class="input-onFocus"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="submit" class="btn form-control theme-adjust" value="Login">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div id="register" class="tab-content">
+                                    <div id="helloWorld" class="tab-content tab-content-active">
+                                        <form action="#" method="POST">
+                                            <div class="form-group form-animate">
+                                                <p class="form-label">Username</p>
+                                                <input type="text" class="input-animate" required autocomplete="username">
+                                                <span class="input-onFocus"></span>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="form-group form-animate">
+                                                        <p class="form-label">Password</p>
+                                                        <input type="password" class="input-animate" required autocomplete="new-password">
+                                                        <span class="input-onFocus"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-group form-animate">
+                                                        <p class="form-label">Confirm Password</p>
+                                                        <input type="password" class="input-animate" required autocomplete="new-password">
+                                                        <span class="input-onFocus"></span>
+                                                    </div>
+                                                </div>
+                                                <input type="checkbox" id="label" required>
+                                                <label for="label">By signing up, you agree to our <a href="#">Terms and Condition</a> and our <a href="#">Privacy Policy</a></label>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="submit" class="btn form-control theme-adjust" value="Register">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5"></div>
+                </div>
+            </div>
+        </body>
+</html>
